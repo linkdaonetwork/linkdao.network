@@ -10,7 +10,7 @@ html {
 	color: #151925;
 	font-size:18px;
 	line-height:1.7;
-	overflow: hidden;
+	/* overflow: hidden; */
 	/* height: 200vh; */
 }
 
