@@ -1751,7 +1751,7 @@ blockquote{margin:0 0 10px;padding:10px 20px;border-left:5px solid #57586e;font-
 
 .btn{height: 35px;min-width:246px;font-size: 17px;padding-top: 5px;padding-bottom: 4px;border-radius:5px;-webkit-transition:.5s;transition:.5s;font-family:Rajdhani,sans-serif;font-weight:700;text-align:center;text-transform:uppercase;}
 
-.btn.btn-bg-sky{background-color: #25bcca;background-image: linear-gradient(267deg,#00e2c8,#00a7e6);}
+.btn.btn-bg-sky{background-color: #00e2c8;background-image: linear-gradient(267deg,#00e2c8,#00e2c8);}
 
 .btn.btn-bg-sky:hover{background-color:#10a3d7}
 
