@@ -3872,13 +3872,11 @@ animation: none;
   bottom: -100%;
   top: -125%;
   left: -100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   /* z-index: -100; */
 }
 
-@media (max-width: ) {
-  
-}
+
 #myVideo {
   background-size: cover;
   background-position: 50% 50%;
@@ -3890,9 +3888,10 @@ animation: none;
   bottom: -100%;
   top: -125%;
   left: -100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   /* z-index: -100; */
 }
+
 
 
 
