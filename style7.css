@@ -3914,20 +3914,13 @@ animation: none;
 
 
 
-@media (min-width: 992px) {
-   .margin_l{
-   margin-left: 6rem;
-  }
+.margin_l{
+margin: auto;
 }
 
-@media (min-width: 1050px) {
-  .margin_l{
-  margin-left: 7rem;
- }
-}
-
-@media (min-width: 1198px) {
-  .margin_l{
-  margin-left: 9rem;
- }
+.margin_l a{
+  margin-right: 28px;
+  margin-left: 35px;
+    padding-right: 12px;
+    padding-left: 12px;
 }
