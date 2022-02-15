@@ -629,7 +629,7 @@ textarea.w-input,textarea.w-select{height:auto}
 
 .w-nav-brand{position:relative;float:left;text-decoration:none;color:#333}
 
-.w-nav-link{position:relative;display:inline-block;vertical-align:top;text-decoration:none;color:#222;padding:20px;text-align:left;margin-left:auto;margin-right:auto;opacity: 0.7;}
+.w-nav-link{position:relative;display:inline-block;vertical-align:top;text-decoration:none;color:#222;padding:20px;text-align:left;margin-left:auto;margin-right:auto}
 
 .w-nav-link.w--current{color:#0082f3}
 
@@ -1705,13 +1705,13 @@ blockquote{margin:0 0 10px;padding:10px 20px;border-left:5px solid #57586e;font-
 
 .header-navigation{width:100%}
 
-.nav-linkk{position:relative;padding:5px 10px;-webkit-transition:.5s;transition:.5s;font-family:Rajdhani,sans-serif;color: #fff;font-size:17px;line-height:23px;font-weight:700;}
+.nav-linkk{position:relative;padding:5px 10px;-webkit-transition:.5s;transition:.5s;font-family:Rajdhani,sans-serif;color: #fff;font-size:17px;line-height:23px;font-weight:700;opacity: 0.7;}
 
 .nav-linkk:hover{color:#fff}
 
 .nav-linkk.w--current{color:#10a3d7}
 
-.header-leftpart{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width: 30%;min-width: 30%;}
+.header-leftpart{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width: 400%;min-width: 50%;}
 
 .header-leftmenu.show-mob{display:none}
 
@@ -3866,13 +3866,31 @@ animation: none;
   background-position: 50% 50%;
   position: absolute;
   margin: auto;
-  width: 125%;
-  height: 125%;
+  width: 100%;
+  height: 100%;
   right: -100%;
   bottom: -100%;
   top: -125%;
   left: -100%;
-  /* object-fit: cover; */
+  object-fit: cover;
+  /* z-index: -100; */
+}
+
+@media (max-width: ) {
+  
+}
+#myVideo {
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  bottom: -100%;
+  top: -125%;
+  left: -100%;
+  object-fit: cover;
   /* z-index: -100; */
 }
 
@@ -3890,3 +3908,26 @@ animation: none;
     /* left: -100%; */
     /* object-fit: cover; */
     /* z-index: -100; */
+
+
+
+
+
+
+@media (min-width: 992px) {
+   .margin_l{
+   margin-left: 6rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .margin_l{
+  margin-left: 7rem;
+ }
+}
+
+@media (min-width: 1198px) {
+  .margin_l{
+  margin-left: 9rem;
+ }
+}
