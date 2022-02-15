@@ -10,9 +10,12 @@ html {
 	color: #151925;
 	font-size:18px;
 	line-height:1.7;
-	/* overflow: hidden; */
+	overflow: hidden;
 	/* height: 200vh; */
 }
+
+
+
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 
@@ -2616,7 +2619,7 @@ ul{font-size:16px}
 
 .card-text{font-size:18px}
 
-.how-it-works-grid-column{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top:-6px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.how-it-works-grid-column{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top: -71px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 
 .about-card{width:250px;height:180px;padding:10px}
 
@@ -3873,7 +3876,7 @@ animation: none;
     height: 170&;
     right: -100%;
     bottom: -100%;
-    top: -144%;
+    top: -157%;
     left: -100%;
     /* object-fit: cover; */
     /* z-index: -100; */
@@ -3953,6 +3956,11 @@ margin: auto;
 @media (max-width: 733px) {
   .launch_btn_margin{
     margin-top: 124px;
-    margin-bottom: -122px;
+    /* margin-bottom: -185px; */
+  } 
+  
+  .social_btn_margin{
+    margin-top: -124px !important;
+    /* margin-bottom: -185px; */
   }  
 }
