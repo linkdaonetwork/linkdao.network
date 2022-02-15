@@ -1,0 +1,408 @@
+<!DOCTYPE html><!-- Last Published: Thu Sep 02 2021 12:30:16 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.immutable.com" data-wf-page="6087c081c134e448d96e2da4" data-wf-site="5f7eec37ff782e797edabe11">
+<!-- Mirrored from www.immutable.com/blog/a-guide-to-nft-scaling-solutions by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 13:19:36 GMT -->
+<head><meta charset="utf-8"/><title>ELI5: NFT Scaling Solutions</title><meta content="A short guide for the various NFT scaling options." name="description"/><meta content="ELI5: NFT Scaling Solutions" property="og:title"/><meta content="A short guide for the various NFT scaling options." property="og:description"/><meta content="https://assets-global.website-files.com/5f7eec37ff782e075edabe18/5febd12ef7f418363985a574_nft-scaling-solution-bg.png" property="og:image"/><meta content="ELI5: NFT Scaling Solutions" property="twitter:title"/><meta content="A short guide for the various NFT scaling options." property="twitter:description"/><meta content="https://assets-global.website-files.com/5f7eec37ff782e075edabe18/5febd12ef7f418363985a574_nft-scaling-solution-bg.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="../../assets-global.website-files.com/5f7eec37ff782e797edabe11/css/immutable-staging.f157c092a.min.css" rel="stylesheet" type="text/css"/><script src="../../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Rajdhani:300,regular,700"]  }});</script><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="../../assets-global.website-files.com/5f7eec37ff782e797edabe11/5f8e649cf41cb1120d8a49f0_favicon-32x32.png" rel="shortcut icon" type="image/x-icon"/><link href="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782edb34dabf30_256.svg" rel="apple-touch-icon"/><style>.anti-flicker-hide { opacity: 0 !important}</style><script type="text/javascript">(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;})(window,document.documentElement,'anti-flicker-hide','dataLayer',4000,{'GTM-PRJ36KS':true});</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-121482365-9"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-121482365-9', {'anonymize_ip': false, 'optimize_id': 'GTM-PRJ36KS'});</script><script type="text/javascript">!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.agent='plwebflow';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','../../connect.facebook.net/en_US/fbevents.js');fbq('init', '966507160441201');fbq('track', 'PageView');</script><style>
+.header-part .nav-linkk.new-tag::before {
+        content: 'NEW';
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    top: -11px;
+    right: 0;
+    background: linear-gradient(90deg, rgb(4, 155, 177) 18%, rgb(36, 209, 233) 92%);
+    padding: 0px 6px;
+    border-radius: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+}
+  .nav-linkk.new-tag.w--current::after {
+    display: none;
+}
+  .nav-linkk.new-tag.w--current {
+    color: #757c8e;
+}
+ /*-----landing page header ----*/ 
+  .nav-linkk.w--current::after {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    width: calc(100% - 20px);
+    left: 10px;
+    background: #24d1e9;
+    height: 3px;  
+}
+  .stats-infobox:last-child .stats-infoboxinn{border-right:0;}
+  .w-nav-button.w--open {
+    background-color: transparent; 
+}
+  .w-nav-overlay{height:100vh !important;
+      position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9998;}
+  .w-nav-overlay [data-nav-menu-open]{height: 100%;background: #0E1118;overflow: auto;top: 0;padding: 10px 10px 60px;}
+  @media screen and (max-width:991px) {
+    .header-part .nav-linkk.new-tag::before {
+    content: 'NEW';
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    background: linear-gradient(90deg, rgb(4, 155, 177) 18%, rgb(36, 209, 233) 92%);
+    padding: 0px 6px;
+    border-radius: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+} 
+.nav-linkk.new-tag {
+    width: auto;
+}
+    .disconnect-menu {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    border-top: 2px solid #2E3136;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;background: #0E1118;
+}
+  .nav-linkk.w--current::after {display:none;}
+  .overflowhid{overflow:hidden;}
+  .w-nav-button.close-menu div {
+opacity: 0;
+}
+.w-nav-button.close-menu div:first-child, .w-nav-button.close-menu div:last-child {
+opacity: 1;
+}
+.w-nav-button.close-menu div:first-child {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+top: 7px;
+}
+.w-nav-button.close-menu div:last-child {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+top: -7px;
+}
+    .explore-box:last-child{padding-bottom:0;}
+}
+  
+  
+@media screen and (max-width: 767px){
+  body{
+    overflow-x: hidden;
+  }
+.section.how-it-works-hero {
+height: calc(100vh - 90px);
+min-height:640px;
+}
+/*===================*/
+}
+  .section.oradr-row.sceert.one{
+    transition: all 1.2s ease-in-out;
+    background-color: rgba(35, 43, 62, 1.0);
+  }
+
+  
+  .section.oradr-row.sceert.one.element-from-top, .section.oradr-row.sceert.one.element-from-top-2{
+background-color: transparent;
+  }
+.element-from-top .contentkh, .element-from-top-2 .contentkh{
+    color: #11161f;
+  }
+.element-from-top .testimonial-quote, .element-from-top-2 .testimonial-quote{
+    color: #57586e;
+  }
+.element-from-top .testimonial-name, .element-from-top-2 .testimonial-name{
+    color: #0a083b;
+  }
+.element-from-top .testimonial-position, .element-from-top-2 .testimonial-position{
+    color: #57586e;
+  }
+.footer-link-box {
+  	position: absolute;
+    right: 0;
+    top: 15px;
+  	width: auto;
+  }
+.footer-link-box a.link-7:after {
+  	content: '';
+    display: block;
+    width: 30px;
+    background-color: #fff;
+    height: 3px;
+    margin-top: 5px;
+  	transition: all 0.3s ease;
+    position: absolute;
+  }
+.footer-link-box a.link-7:hover:after {
+   	width: 100%;
+ 	transition: all 0.3s ease;
+    background-color: #24d1e9;
+  }
+@media only screen and (max-width: 767px) {
+  	.footer-link-box {
+      top: -4px;
+  	}
+  }
+@media only screen and (max-width: 575px) { 
+  	.custom-modal-container .modal-content {
+  		width: calc(100% - 30px);
+  	}
+  }
+@media only screen and (max-width: 480px) {
+  .footer-link-box {
+      right: auto;
+      top: 45px;
+      width: auto;
+      left: 0;
+	}
+  .contact-icon-boxin .para-16 {
+    font-size: 13px;
+}
+  }
+</style>
+
+</head><body><div class="header-section"><div class="container-fluid header-container"><div class="header-part"><div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header-navbar w-nav"><div class="header-leftpart"><div class="main-logo"><a href="../index.html" class="w-nav-brand"><img src="../../assets-global.website-files.com/5f7eec37ff782e797edabe11/60e443ed35f546d0d2ede08f_logo-main.png" loading="lazy" sizes="188.15625px" srcset="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/60e443ed35f546d0d2ede08f_logo-main-p-500.png 500w, https://assets-global.website-files.com/5f7eec37ff782e797edabe11/60e443ed35f546d0d2ede08f_logo-main.png 607w" alt="" class="main-site-logo"/></a></div><div class="header-leftmenu"><a href="../token.html" class="nav-linkk">IMX Token</a><a href="https://immutablex.medium.com/huge-imx-airdrop-for-early-backers-of-immutable-x-the-first-l2-for-nfts-48e731cd4d" class="nav-linkk new-tag">Play to Earn</a><a href="https://market.x.immutable.com/" target="_blank" class="nav-linkk">Marketplace</a></div></div><div class="header-navigation"><nav role="navigation" class="w-nav-menu"><div class="header-leftmenu show-mob"><a href="../token.html" class="nav-linkk">IMX Token</a><a href="https://immutablex.medium.com/huge-imx-airdrop-for-early-backers-of-immutable-x-the-first-l2-for-nfts-48e731cd4d" class="nav-linkk new-tag">Play to Earn</a><a href="https://market.x.immutable.com/" target="_blank" class="nav-linkk">Marketplace</a></div><a href="../contact.html" class="nav-linkk w-nav-link">Start Building</a><a href="https://docs.x.immutable.com/" target="_blank" class="nav-linkk w-nav-link">Docs</a><a href="https://medium.com/@immutablex" target="_blank" class="nav-linkk w-nav-link">Blog</a><a href="../careers.html" class="nav-linkk w-nav-link">Career</a><a href="https://support.immutable.com/" target="_blank" class="nav-linkk w-nav-link">Support</a><div class="disconnect-menu"><a href="../careers.html" class="nav-linkk text-red w-nav-link">Disconnect</a></div></nav><div class="menu-button w-nav-button"><div class="menuline"></div><div class="menuline"></div><div class="menuline"></div></div></div></div></div></div></div><div class="header-height"></div><div class="navigation-wrap display-none wf-section"><div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav"><div class="navigation-container"><div class="navigation-left"><a href="../index.html" class="brand w-nav-brand"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782ea4c1dabf14_Group.svg" alt="" class="template-logo"/></a><nav role="navigation" class="nav-menu w-nav-menu"><a href="#" class="link-6">Exchange</a><a href="#" class="link-6">Mint</a><a href="#" class="link-6">Features</a><a href="#" class="link-6">FAQ</a><div data-hover="true" data-delay="0" class="dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="chevron w-icon-dropdown-toggle"></div><div class="text-block-2">Info</div></div><nav class="navigation-dropdown dropdown-small w-dropdown-list"><div class="dropdown-pointer"><div class="dropdown-wrapper"><a href="../blog.html" class="dropdown-link w-inline-block"><div class="icon-square"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782e06bbdabecd_blog.svg" alt=""/></div><div class="nav-content-wrap"><div class="dropdown-title">Blog</div><div class="nav-link-details">The latest from the team.</div></div></a><a href="../careers.html" class="dropdown-link w-inline-block"><div class="icon-square"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782e2813dabece_group.svg" alt=""/></div><div class="nav-content-wrap"><div class="dropdown-title">Careers</div><div class="nav-link-details">View open positions.</div></div></a><a href="../contact.html" class="dropdown-link link-03 w-inline-block"><div class="icon-square"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782e9a0adabed7_contact.svg" alt="" class="icon"/></div><div class="nav-content-wrap"><div class="dropdown-title">Contact</div><div class="nav-link-details">Get in touch.</div></div></a><div class="dropdown-block"><a href="../privacy.html" class="nav-blog-item w-inline-block"><div class="nav-link-blog">Privacy Policy</div></a></div></div><div class="pointer"></div></div></nav></div></nav></div><div class="navigation-right"><div class="login-buttons"><a href="../contact.html" target="_blank" class="button-menu w-button">START BUILDING</a></div></div></div></div><div data-collapse="medium" data-animation="default" data-duration="700" data-easing="ease-out" data-easing2="ease-out" data-w-id="c155026f-94dc-4e1a-28a9-b6e0e7d9f688" role="banner" class="navigation-mobile w-nav"><div class="nav-container-mobile"><a href="../index.html" class="w-nav-brand"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782ea4c1dabf14_Group.svg" alt="" class="template-logo"/></a><nav role="navigation" class="mobile-nav w-nav-menu"><a href="../index.html" class="mobile-nav-link w-nav-link">Home</a><div data-delay="0" data-hover="false" class="mobile-dropdown w-dropdown"><div class="mobile-toggle w-dropdown-toggle"><div class="w-icon-dropdown-toggle"></div><div>Product</div></div><nav class="dropdown-list w-dropdown-list"><a href="../index.html" class="dropdown-link-mob w-inline-block"><div class="icon-square"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782e2180dabecf_home.svg" alt=""/></div><div class="nav-content-wrap"><div class="dropdown-title">Homepage</div><div class="nav-link-details">Get to know Midnight Theme</div></div></a><a href="#" class="dropdown-link-mob w-inline-block"><div class="icon-square"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782eabd4dabed1_faq.svg" alt="" class="icon"/></div><div class="nav-content-wrap"><div class="dropdown-title">How It Works</div><div class="nav-link-details">Learn how Midnight can help you</div></div></a><a href="../pricing.html" class="dropdown-link-mob w-inline-block"><div class="icon-square"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782ea39fdabed0_price .svg" alt="" class="icon"/></div><div class="nav-content-wrap"><div class="dropdown-title">Pricing &amp; FAQ</div><div class="nav-link-details">Find the right plan for you</div></div></a><a href="../contact.html" class="dropdown-link-mob w-inline-block"><div class="icon-square"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782e9a0adabed7_contact.svg" alt="" class="icon"/></div><div class="nav-content-wrap"><div class="dropdown-title">Contact</div><div class="nav-link-details">Get in touch with the team</div></div></a></nav></div><div data-delay="0" data-hover="false" class="mobile-dropdown w-dropdown"><div class="mobile-toggle w-dropdown-toggle"><div class="w-icon-dropdown-toggle"></div><div>Company</div></div><nav class="dropdown-list w-dropdown-list"><a href="../about.html" class="dropdown-link-mob w-inline-block"><div class="icon-square"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782e2180dabecf_home.svg" alt=""/></div><div class="nav-content-wrap"><div class="dropdown-title">About us</div><div class="nav-link-details">Get to know the team and our mission</div></div></a><a href="../blog.html" class="dropdown-link-mob w-inline-block"><div class="icon-square"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782e06bbdabecd_blog.svg" alt="" class="icon"/></div><div class="nav-content-wrap"><div class="dropdown-title">Blog</div><div class="nav-link-details">Read our amazing articles</div></div></a><div class="dropdown-block"><a href="../privacy.html" class="nav-blog-item w-inline-block"><div class="nav-link-blog">Privacy Policy</div></a><a href="../terms-of-service.html" class="nav-blog-item w-inline-block"><div class="nav-link-blog">Terms of Service</div></a></div></nav></div><a href="../blog.html" class="mobile-nav-link w-nav-link">Blog</a><a href="../contact.html" class="mobile-nav-link w-nav-link">Contact</a></nav></div></div></div><div class="blog-post-header"><div class="hero-container"><h1 class="heading-h1">ELI5: NFT Scaling Solutions</h1><div class="profile-block-header"><img width="50" src="https://assets-global.website-files.com/" alt="" class="post-author-picture w-dyn-bind-empty"/><div class="details-wrapper"><div class="small-title white">Immutable Team</div><div class="paragraph-details-small white">October 19, 2020</div></div></div></div></div><div class="blog-section"><div class="blog-post-container"><div class="w-layout-grid blog-grid"><div class="post-content-left"><div class="blog-post-text w-richtext"><h4>All Solutions Are Not Equal</h4><p>Everyone who uses, mints or trades NFTs on Ethereum knows that scaling is the key challenge facing the industry right now. The uniqueness of NFTs, a key part of their desirability, is also the very thing that makes them expensive and illiquid to trade on a blockchain with a limited capacity. Many teams are working extremely hard to give players and studios what they want: scalable, instant, and trustless minting and trading of NFTs. The purpose of this article is to help users and developers compare and contrast the various scaling strategies that have been proposed and built. The properties of these solutions usually have a direct impact on the security of your assets: if you’re an NFT holder, it&#x27;s important to understand where they are being stored!</p><p><br/></p><h4><strong>Alternative Blockchains (Tron, Flow, EOS)</strong><br/></h4><p>Alternative blockchains, which make different design decisions to ETH to prioritize throughput, are commonly proposed scaling solutions. This includes projects like Tron and EOS, which support general-purpose applications, as well as projects like Flow, which are targeting NFTs specifically. In general, the blockchain trilemma still applies: the only fundamental scaling boosts come from a reduction in security or decentralization or both. Nevertheless, this is a decision that comes down to individual applications: what makes sense for users of one game may not make sense for another.<br/></p><p>However, with the rise of layer 2 solutions built on ETH, the key advantage of these alternative blockchains (scalability improvements) is under threat. Ethereum remains the largest smart contract blockchain in the world. It has built up enormous network effects and is the platform of choice for users and developers alike. It has significant ecosystem support: exchanges, wallets, fiat providers - even regulators are very familiar with Ethereum and how to interface with it. Building all this infrastructure from scratch while trying to compete with Ethereum&#x27;s momentum will be a daunting challenge.</p><p><br/></p><h4><strong>Sidechains (Matic, Ronin, xDai)</strong><br/></h4><p>Sidechains are separate blockchains that run parallel to Ethereum. They have their own miners (often called validators and operators), their own consensus algorithm, and their own bridge to transfer assets to and from the main chain (in this case, Ethereum). Users deposit by locking their assets in a mainnet smart contract. To withdraw back to Ethereum, users initiate an exit on the sidechain, then provide a proof of the exit once it is included in the side chain&#x27;s history. <br/></p><p>Sidechains are very effective at general computation, and all EVM contracts can be ported directly to run on the sidechain, enabling ETH-like interoperability between contracts on each sidechain, as well as application-level logic. This makes them a common choice for NFT scaling, as applications can migrate with low overheads and development time.<br/></p><p>However, sidechains, like alternative blockchains, usually relax Ethereum&#x27;s security and decentralization in order to reach their desired scale. Users should be careful not to assume that their ETH assets, while in a sidechain, are just as secure as they are on mainnet: they are only as secure as the consensus algorithm of the sidechain. For sidechains with a limited number of operators and a vulnerable consensus algorithm (i.e. most of them), this could result in the complete theft or ransom of all user assets stored in the sidechain. </p><p>Sidechains also often require additional tooling to be built to support the requisite level of UX.<br/></p><p><br/></p><h4><strong>Plasma Chains</strong><br/></h4><p>Plasma chains are a type of sidechain which avoids the security problems described above (at the cost of some scale) by publishing the roots of each plasma chain block on mainnet Ethereum. This ensures that (in theory) plasma chains directly inherit the security of the parent blockchain.<br/></p><p>However, they have a significant disadvantage in that withdrawals from the plasma chain can take up to 2 weeks, as there is a requirement for a challenge period (‘exit game’) where users can report fraud. This dramatically impacts the UX of the system for users - explaining to mainstream gamers the complex reason they can’t access their assets immediately is an unenviable task. </p><p><br/></p><h4><strong>State Channels (Efinity, Raiden)</strong><br/></h4><p>State channels are a general purpose scaling solution which are most useful in interactions between a defined number of participants in a closed system. <br/></p><p>State channels require an opening and closing transaction on-chain, but all the intermediate states are sent directly between the parties (who both sign to indicate assent). Imagine a game of tic-tac-toe where we each sign off on each other&#x27;s moves. If either of us claims we won unjustly, the other can produce the contradictory signature and force an on-chain arbitration.<br/></p><p>Importantly, state channels need 100% availability of all the participants involved, or one user could publish an old state and claim it as the latest. If we&#x27;re sending NFTs backwards and forwards between us, you can see the damage that might cause. The participants can use someone to represent them if they go offline, but this third-party could be bribed or attacked (particularly if one entity is fulfilling this function for the entire ecosystem). </p><p><br/></p><h4><strong>Rollups</strong><br/></h4><p>Rollups “roll up” large numbers of transactions into a big batch, then generate a “proof” for that batch. Using this proof, rather than checking each trade individually, we’re able to check the entire batch at once. Generally, users will deposit their assets into a smart contract on-chain, and their assets will be made available for instant trading in an off-chain environment. Users can subsequently withdraw back on-chain under certain conditions (usually waiting for a withdrawal batch to be published). These systems often allow the ‘operator’ of the system to censor transactions by not including them in batches, but give users the option to withdraw those assets back on chain to preserve user custody.<br/></p><p>Rollups are the latest of the scaling technologies described in this document to reach “production-grade”, and are the subject of significant excitement for everyone involved in Ethereum. Last month, Vitalik Buterin declared that &quot;the Ethereum ecosystem is likely to be all-in on rollups as a scaling strategy for the near and mid-term future”.</p><p><br/></p><h4><strong>Optimistic Rollups (Optimism)</strong><br/></h4><p>Optimistic rollups are “optimistic” because they assume that the proof provided for each transaction batch is valid. During a pre-defined challenge period (usually 1-2 weeks), anyone can challenge the submitted proof and assert fraud - these are therefore called “fraud proofs”. The advantage of optimistic rollups is that they easily support general computation: you will be able to copy/paste your mainnet Solidity code. <br/></p><p>However, they have significant limitations for scaling NFTs. Firstly, there is no possibility for fast NFT withdrawals - taking your NFT out of the system can require a 1-2 week wait. Secondly, in the event that an optimistic rollup is very successful and contains a significant amount of value, they can become a target for attacks, as the cost of stealing funds from the Optimistic Rollup is unrelated to the size of the potential theft - a penalty for the growth that we and others expect in the NFT ecosystem. </p><p><br/></p><h4><strong>ZK-Rollup (Immutable X)</strong><br/></h4><p>ZK-rollups use “validity proofs” rather than the fraud proofs described above, using either SNARKs or STARKs and plenty of complex mathematics to prove the validity of the transactions in the rollup. Using validity proofs means that once a proof has been accepted on-chain, users have immediate confirmation that those transactions were valid and are now immutable. In an NFT context, this solves both the problems identified with optimistic rollups above: users can withdraw immediately and no-one is able to attack the system, regardless of the amount of funds flowing through the system. In terms of scale, ZK-rollups have been able to reach speeds of thousands of transactions per second, and are capable of reaching even higher limits in future. <br/></p><p>The current disadvantage of ZK-rollups is general computation: it is more challenging to port smart contract logic directly into the rollup, and therefore only limited functionality is available e.g. transfers and trades. However, with the fantastic work the StarkWare team is doing with CAIRO, ZK-rollups will soon have parity in terms of general computation as well. </p><p><br/></p><h4><strong>What did you choose? Why?</strong><br/></h4><p>At Immutable we&#x27;ve worked in depth on blockchain games for years with titles like Gods Unchained. When comparing scaling solutions, we knew what we wanted:<br/></p><ul role="list"><li>Unlimited scalability</li><li>Instant transaction confirmation and mainstream-quality UX</li><li>No compromise on user security</li><li>Retaining access to Ethereum’s ecosystem and network effects</li></ul><p><br/></p><p>This made our choice easy: we built Immutable X as a ZK-rollup in partnership with StarkWare. ZK-rollups are the only solution above capable of scale without compromise, and though they still have disadvantages in the area of general computation, those challenges are rapidly being resolved. When you build an application using a scaling solution, you are committing to that solution: we wanted to ensure we backed the winner not just for right now, but for years to come. <br/></p><p>We know the NFT ecosystem desperately needs scalability. With Immutable X, we’re offering that scalability to everyone without forcing applications or users to compromise on the security of their assets. If you’d like to find out more, <a href="../contact.html">please get in touch</a>. </p><p><br/></p><p><br/></p></div></div><div class="content-right"><div class="stick-wrapper"><div class="email-subscription"><div class="large-title">Subscribe to our newsletter</div><div class="w-form"><form id="email-form" name="email-form" data-name="Email Form" class="blog-form"><input type="email" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Email address" id="Email-Address" required=""/><div class="submit-button-wrap"><input type="submit" value="" data-wait="Please wait..." class="submit-button w-button"/><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782eb359dabecc_chevron.svg" alt="" class="submit-button-icon"/></div></form><div class="success-message w-form-done"><div class="small-title">Thank you! Your submission has been received!</div></div><div class="error-message w-form-fail"><div class="error-text">Oops! Something went wrong while submitting the form.</div></div></div></div><div class="featured-articles"><div class="large-title">Related articles</div><div class="featured-block"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="a-guide-to-nft-scaling-solutions.html" aria-current="page" class="featured-item w-inline-block w--current"><img width="90" src="../../assets-global.website-files.com/5f7eec37ff782e075edabe18/5febd12ef7f418363985a574_nft-scaling-solution-bg.png" alt="" sizes="90px" srcset="https://assets-global.website-files.com/5f7eec37ff782e075edabe18/5febd12ef7f418363985a574_nft-scaling-solution-bg-p-500.png 500w, https://assets-global.website-files.com/5f7eec37ff782e075edabe18/5febd12ef7f418363985a574_nft-scaling-solution-bg-p-800.png 800w, https://assets-global.website-files.com/5f7eec37ff782e075edabe18/5febd12ef7f418363985a574_nft-scaling-solution-bg-p-1080.png 1080w, https://assets-global.website-files.com/5f7eec37ff782e075edabe18/5febd12ef7f418363985a574_nft-scaling-solution-bg.png 1920w" class="featured-post-image"/><div class="small-title">ELI5: NFT Scaling Solutions</div></a></div></div></div></div></div></div></div></div></div></div><div class="section footer display-none wf-section"><div class="twitter-cta"><div class="grid-container left-alignment"><h2 class="h2 white"><a href="https://twitter.com/immutable" target="_blank" class="footer-link-span">Follow us on Twitter</a> for updates and spicy memes. Join our <a href="https://discord.gg/TUa8a9A" target="_blank" class="link-5">Discord</a> for quests and developer discussion. Watch us on <a href="https://www.youtube.com/channel/UCR_WlrGou7hm0ACXYpldcuA" target="_blank">YouTube.</a></h2></div></div><div class="w-layout-grid footer-links"><img src="https://assets-global.website-files.com/5f7eec37ff782e797edabe11/5f7eec37ff782ea4c1dabf14_Group.svg" alt="" class="logo"/><div id="w-node-_8d798258-0ce9-d512-493d-c2367a8c58df-7a8c58c7" class="footer-container"></div><div></div><div class="footer-link-box"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdTFIfJ0UFkaJqtAt833Sb1XVROz2-xCzvHbFhxiQPWut9pkQ/viewform?usp=sf_link" target="_blank" class="link-7">Developer Grants Application</a></div></div><div class="container-4 w-container"></div></div><div class="footer-section"><div class="top-footer-part"><div class="custom-container w-container"><div class="top-footer-part-in"><div class="top-footer-left"><a href="../index.html" class="footer-logo w-inline-block"><img src="../../assets-global.website-files.com/5f7eec37ff782e797edabe11/60d338a92f58e049bab45d01_light.png" loading="lazy" alt=""/></a><div class="footer-nav"><a href="https://medium.com/@immutablex" target="_blank" class="fnav-link">Blog</a><a href="../careers.html" class="fnav-link">Careers</a><a href="../contact.html" class="fnav-link">Contact</a></div><a href="https://bit.ly/2Xw8wOF" target="_blank" class="fnav-link">Whitepaper</a></div><div class="top-footer-right"><a href="https://twitter.com/Immutable" target="_blank" class="social-link-icon w-inline-block"><img src="../../assets-global.website-files.com/5f7eec37ff782e797edabe11/60d33afb902a2d7c4eb650a3_Vector%402x.png" loading="lazy" alt="" class="width24px"/></a><a href="https://discord.gg/6GjgPkp464" target="_blank" class="social-link-icon w-inline-block"><img src="../../assets-global.website-files.com/5f7eec37ff782e797edabe11/60d338f260e95043277bac60_Subtract%402x.png" loading="lazy" alt="" class="width24px"/></a><a href="https://t.me/immutablex" target="_blank" class="social-link-icon w-inline-block"><img src="../../assets-global.website-files.com/5f7eec37ff782e797edabe11/60fe40db1a5ab24762a08cb2_telegram-icon.png" loading="lazy" alt="" class="width24px"/></a><a href="https://www.reddit.com/r/ImmutableX/" target="_blank" class="social-link-icon w-inline-block"><img src="../../assets-global.website-files.com/5f7eec37ff782e797edabe11/60fe40d8175fe14865a4218e_reddit-icon.png" loading="lazy" alt="" class="width24px"/></a></div></div></div></div><div class="bottom-footer-part"><div class="custom-container w-container"><div class="bottom-footer-part-in"><div class="bottomfooter-left"><a href="https://bit.ly/3m5xMFH" class="fnav-link pl-0 font-12">Terms &amp; Conditions </a><div class="small-text text-gray bold rajdhani-font">Immutable © 2021</div></div></div></div></div></div><script src="../../d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c84f96.js?site=5f7eec37ff782e797edabe11" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="../../assets-global.website-files.com/5f7eec37ff782e797edabe11/js/immutable-staging.2b637432f.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script src="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  (function($) {
+  $.fn.visible = function(partial) {
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;   
+         return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+ }; 
+})(jQuery);
+$(window).scroll(function() { 
+$(".animat-1").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      $('.sceert').addClass("element-from-top"); 
+    } else {
+        $('.sceert').removeClass("element-from-top");
+    }
+  });
+  
+  $(".animat").each(function(j, ek) {
+    var ek = $(ek);
+    if (ek.visible(true)) {
+      $('.sceert').addClass("element-from-top-2"); 
+    } else {
+        $('.sceert').removeClass("element-from-top-2");
+    }
+  });
+});
+
+  
+  
+  
+  
+  
+  
+  (function(){
+	function hasClass(el, cls) {
+		if (el.className.match('(?:^|\\s)'+cls+'(?!\\S)')) { return true; } 
+		}
+	function addClass(el, cls) {
+		if (!el.className.match('(?:^|\\s)'+cls+'(?!\\S)')){ el.className += ' '+cls; } 
+		}
+	function delClass(el, cls) {
+		el.className = el.className.replace(new RegExp('(?:^|\\s)'+cls+'(?!\\S)'),'');
+		}
+
+	function elementFromTop(elem, classToAdd, distanceFromTop, unit) {
+		var winY = window.innerHeight || document.documentElement.clientHeight,
+		    distTop = elem.getBoundingClientRect().top,
+		    distPercent = Math.round((distTop / winY) * 100),
+		    distPixels = Math.round(distTop),
+		    distUnit;
+		distUnit = unit == 'percent' ? distPercent : distPixels;
+		if (distUnit <= distanceFromTop) {
+			if (!hasClass(elem, classToAdd)) { addClass(elem, classToAdd); }
+			} else {
+			delClass(elem, classToAdd);
+			}
+		}
+    let _one = document.getElementById('one');
+    if (typeof(_one) != 'undefined' && _one != null) {
+      window.addEventListener('scroll', function() {
+          elementFromTop(document.getElementById('one'), 'element-from-top-ppp', -100, 'pixels');
+          }, false);
+  	}
+})();
+
+
+ready(function() {
+  initializeBackground();
+});
+
+var resizeTimeout;
+var resizeCooldown = 500;
+var lastResizeTime = Date.now();
+function initializeBackground() {
+  canvas = document.getElementById("stars");
+  if(typeof(canvas) != 'undefined' && canvas != null) {
+  	canvas.width = window.innerWidth;
+  	canvas.height = window.innerHeight;
+    window.addEventListener("resize", function() {
+      if (Date.now() - lastResizeTime < resizeCooldown && resizeTimeout) {
+        clearTimeout(resizeTimeout);
+        delete resizeTimeout;
+      }
+
+      lastResizeTime = Date.now();
+      canvas.style.display = "none";
+      resizeTimeout = setTimeout(function() {
+        fadeIn(canvas, 500);
+        initializeStars();
+      }, 500);
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  	initializeStars();
+    (window.requestAnimationFrame && requestAnimationFrame(paintLoop)) ||
+      setTimeout(paintLoop, ms);
+  }
+}
+
+var canvas;
+var stars = [];
+
+function rand(max) {
+  return Math.random() * max;
+}
+
+function Star(canvas, size, speed) {
+  this.ctx = canvas.getContext("2d");
+  this.size = size;
+  this.speed = speed;
+  this.x = rand(window.innerWidth);
+  this.y = rand(window.innerHeight);
+}
+
+Star.prototype.animate = function(delta) {
+  this.x += this.speed * delta;
+  this.y -= this.speed * delta;
+  if (this.y < 0) {
+    this.y = window.innerHeight;
+  }
+  if (this.x > window.innerWidth) {
+    this.x = 0;
+  }
+  this.ctx.fillStyle = "#ffffff";
+  this.ctx.fillRect(this.x, this.y, this.size, this.size);
+};
+
+function initializeStars() {
+  var winArea = window.innerWidth * window.innerHeight;
+  var smallStarsDensity = 0.0001;
+  var mediumStarsDensity = 0.00005;
+  var largeStarsDensity = 0.00002;
+  var smallStarsCount = winArea * smallStarsDensity;
+  var mediumStarsCount = winArea * mediumStarsDensity;
+  var largeStarsCount = winArea * largeStarsDensity;
+  stars = [];
+  for (var i = 0; i < smallStarsCount; i++) {
+    stars.push(new Star(canvas, 1, 30));
+  }
+
+  for (var i = 0; i < mediumStarsCount; i++) {
+    stars.push(new Star(canvas, 2, 20));
+  }
+
+  for (var i = 0; i < largeStarsCount; i++) {
+    stars.push(new Star(canvas, 3, 10));
+  }
+}
+
+function drawStars(delta) {
+  for (var i = 0; i < stars.length; i++) {
+    stars[i].animate(delta);
+  }
+}
+
+var ms = 16;
+var lastPaintTime = 0;
+function paintLoop(timestamp) {
+  canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
+  var delta =
+    (window.requestAnimationFrame ? timestamp - lastPaintTime : ms) / 1000;
+  if(delta > 0.05){
+    delta = 0.05;
+  }
+  drawStars(delta);
+  (window.requestAnimationFrame && requestAnimationFrame(paintLoop)) ||
+    setTimeout(paintLoop, ms);
+  lastPaintTime = timestamp;
+}
+
+function fadeIn(element, duration, callback) {
+  element.style.opacity = 0;
+  element.style.display = "block";
+
+  var startTime = Date.now();
+  var tick = function() {
+    var newOpacity = (Date.now() - startTime) / duration;
+    if (newOpacity > 1) {
+      newOpacity = 1;
+      callback && callback();
+    } else {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) ||
+        setTimeout(tick, 16);
+    }
+
+    element.style.opacity = newOpacity;
+  };
+  tick();
+}
+
+
+function ready(fn) {
+  if (
+    document.attachEvent
+      ? document.readyState === "complete"
+      : document.readyState !== "loading"
+  ) {
+    fn();
+  } else {
+    document.addEventListener("DOMContentLoaded", fn);
+  }
+}
+  
+</script>
+
+<script>
+  //nav header
+    $(document).ready(function(){
+    
+      $(document).on("click",'.w-nav-button',function(){
+       // $('body').toggleClass('overflowhid');
+        $(this).toggleClass('close-menu');
+        $('.w-nav-menu').toggleClass('showw-menu');
+ // $('.w-nav-menu').removeClass('hide-menu');
+  //$(this).removeClass('cross-hide');
+  });
+    
+ $(document).on("click",'.w-nav-menu a',function(){ 
+ // $('.w-nav-button').removeClass('close-menu');
+ // $('.w-nav-menu').removeClass('showw-menu');
+ // $('.w-nav-menu').addClass('hide-menu');
+//  $('.w-nav-button').addClass('cross-hide');
+ // $('body').removeClass('overflowhid');
+});
+    
+ 
+   });
+</script></body>
+<!-- Mirrored from www.immutable.com/blog/a-guide-to-nft-scaling-solutions by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 13:19:36 GMT -->
+</html>
+
