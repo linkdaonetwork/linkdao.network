@@ -3904,6 +3904,7 @@ animation: none;
     left: -100%;
     /* object-fit: cover; */
     /* z-index: -100; */
+    opacity: 0.5;
   }}
 
 
@@ -3921,6 +3922,7 @@ animation: none;
     left: -100%;
     /* object-fit: cover; */
     /* z-index: -100; */
+    opacity: 0.5;
   }}
 
 
