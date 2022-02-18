@@ -3975,17 +3975,18 @@ a {
 }
 
 
-a::after{
+.header-leftmenu a::after{
   content: '';
   display: block;
-  width: 0;
+  /* width: 0; */
   height: 2px;
   background: #00e2c8;
-  transition: width .4s ease-in;
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  /* transition: width .4s ease-in; */
 }
 
 
-a:hover:after {
-  opacity: 1;
-  width: 100%;
+.header-leftmenu a:hover:after {
+   transform: scaleX(1); 
 }
