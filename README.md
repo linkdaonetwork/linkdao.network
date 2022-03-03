@@ -1,3 +1,2 @@
-"# bitfarms" 
 "# Linkdao" 
 "# Linkdao" 
