@@ -10,8 +10,8 @@ html {
 	color: #151925;
 	font-size:18px;
 	line-height:1.7;
-	overflow: hidden;
-	/* height: 200vh; */
+	overflow: auto;
+	height: 127vh;
 }
 
 
