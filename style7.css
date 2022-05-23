@@ -3950,7 +3950,7 @@ animation: none;
     height: 100%;
     right: -100%;
     bottom: -100%;
-    top: -157%;
+    top: -164%;
     left: -100%;
     /* object-fit: cover; */
     /* z-index: -100; */
@@ -4394,5 +4394,14 @@ margin-top: 25px;
 .partner-wrapper._7, .partner-wrapper._8 {
   border-right-width: 0;
 }
-
+.button.secondary{
+  height: 46px;
+  font-size: 14px;
 }
+.button{
+  padding-right: 23px;
+  padding-left: 23px;
+}
+}
+
+
