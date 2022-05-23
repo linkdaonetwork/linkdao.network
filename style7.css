@@ -3794,8 +3794,8 @@ li{margin-bottom:10px;font-size:15px}
 @keyframes spin {
  from{
  transform: rotateY(0deg);
- moz-transform: rotateY(0deg); //Firefox
- ms-transform: rotateY(90deg); //Microsoft Browsers
+ moz-transform: rotateY(0deg); /*Firefox*/
+ ms-transform: rotateY(90deg); /*Microsoft Browsers*/
  }
  to{
  transform: rotateY(360deg);
