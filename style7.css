@@ -3799,8 +3799,8 @@ li{margin-bottom:10px;font-size:15px}
  }
  to{
  transform: rotateY(360deg);
- moz-transform: rotateY(360deg); //Firefox
- ms-transform: rotateY(90deg); //Microsoft Browsers
+ moz-transform: rotateY(360deg); /*Firefox*/
+ ms-transform: rotateY(90deg); /*Microsoft Browsers*/
  }
 }
 @-webkit-keyframes spin{
