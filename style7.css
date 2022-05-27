@@ -4273,7 +4273,7 @@ margin-top: 25px;
 @media screen and (max-width: 767px){
 .partners-grid {
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }}
 
 @media screen and (max-width: 479px){
@@ -4330,7 +4330,7 @@ margin-top: 25px;
 }
 .partner-wrapper._4 {
   border-right: 1px solid rgba(255,255,255,.05);
-  border-bottom: 1px solid rgba(255,255,255,.05);
+  /* border-bottom: 1px solid rgba(255,255,255,.05); */
 }
 .partner-wrapper._5 {
   border-right: 1px solid rgba(255,255,255,.05);
