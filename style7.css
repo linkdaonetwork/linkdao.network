@@ -3872,11 +3872,11 @@ animation: none;
     background-position: 50% 50%;
     position: absolute;
     margin: auto;
-    width: 100%;
+    width: 155%;
     height: 100%;
     right: -100%;
     bottom: -100%;
-    top: -143%;
+    top: -163%;
     left: -100%;
     /* object-fit: cover; */
     /* z-index: -100; */
@@ -3894,7 +3894,7 @@ animation: none;
     height: 100%;
     right: -100%;
     bottom: -100%;
-    top: -151%;
+    top: -180%;
     left: -100%;
     /* object-fit: cover; */
     /* z-index: -100; */
@@ -3950,7 +3950,7 @@ animation: none;
     height: 100%;
     right: -100%;
     bottom: -91%;
-    top: -164%;
+    top: -173%;
     left: -100%;
     /* object-fit: cover; */
     /* z-index: -100; */
@@ -3969,11 +3969,11 @@ animation: none;
     background-position: 50% 50%;
     position: absolute;
     margin: auto;
-    width: 100%;
+    width: 68%;
     height: 100%;
     right: -100%;
     bottom: -100%;
-    top: -142%;
+    top: -151%;
     left: -100%;
     /* object-fit: cover; */
     /* z-index: -100; */
@@ -4405,3 +4405,16 @@ margin-top: 25px;
 }
 
 
+.client-logo_1 {
+  max-width: 100%;
+  background-color: transparent;
+/*   margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 35px; */
+  user-select: none;
+  margin: auto;
+}
+
+.darkmode{
+  opacity: 0.4;
+}
