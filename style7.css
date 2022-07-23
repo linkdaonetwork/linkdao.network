@@ -3930,7 +3930,7 @@ animation: none;
     height: 100%;
     right: -100%;
     bottom: -100%;
-    top: -157%;
+    top: -184%;
     left: -100%;
     /* object-fit: cover; */
     /* z-index: -100; */
@@ -3969,8 +3969,8 @@ animation: none;
     background-position: 50% 50%;
     position: absolute;
     margin: auto;
-    width: 68%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     right: -100%;
     bottom: -100%;
     top: -163%;
