@@ -4269,6 +4269,9 @@ margin-top: 25px;
 .media_partner{
   grid-template-columns: 1fr 1fr;
 }
+.media_partner2{
+  grid-template-columns: 1fr;
+}
 
 @media screen and (max-width: 767px){
 .partners-grid {
@@ -4303,12 +4306,12 @@ margin-top: 25px;
     
 }
 
-@media (max-width: 858px) {
+/*@media (max-width: 858px) {
   .partner-wrapper{
-    /* align-items: flex-end; */
+     align-items: flex-end; 
   }
   
-}
+}*/
 
 
 .partner-wrapper._1 {
