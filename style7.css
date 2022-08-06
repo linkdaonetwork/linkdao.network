@@ -4421,3 +4421,21 @@ margin-top: 25px;
 .darkmode{
   opacity: 0.4;
 }
+
+.ca{
+  text-decoration: inherit;
+  color: #fff;
+}
+
+@media (max-width:600px) {
+  .ca{
+    text-align: center;
+  }  
+}
+
+
+
+
+.href{
+
+}
