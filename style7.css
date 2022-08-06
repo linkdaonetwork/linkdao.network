@@ -4433,9 +4433,7 @@ margin-top: 25px;
   }  
 }
 
-
-
-
-.href{
-
+.address_contract{
+  text-decoration: underline;
+  line-break: anywhere;
 }
