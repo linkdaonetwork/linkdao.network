@@ -1712,6 +1712,8 @@ blockquote{margin:0 0 10px;padding:10px 20px;border-left:5px solid #57586e;font-
 
 .nav-linkk:hover{color:#fff}
 
+.mob_hover:hover{color:#00e2c8}
+
 .nav-linkk.w--current{color:#10a3d7}
 
 .header-leftpart{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width: 400%;min-width: 50%;}
@@ -4151,10 +4153,10 @@ a {
 
 
 @media (max-width: 439px) {
-.client-logo{    
+.client-logo{
   margin-right: 2px;
   margin-left: 2px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 }
