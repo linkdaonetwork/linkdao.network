@@ -13093,7 +13093,7 @@ a {
 
 .address_contract {
   text-decoration: underline;
-  line-break: anywhere;
+  /* line-break: anywhere; */
 }
 
 .address_contract:hover {
